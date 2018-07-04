@@ -1,0 +1,86 @@
+.music-chart{
+    color: gray;
+    font-size: 15px;
+    box-shadow: 7px 7px 7px 7px #dcddde;
+    font-family: sans-serif;
+
+    .cell{
+        display: inline;
+        margin: 5px;
+    }
+    .row{
+        margin-top: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: .5px solid #eceaea;
+    }
+    .row:nth-child(odd) {
+        background: #fafbfb;
+    }
+    .caption{
+        vertical-align: 2px;
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+        background: #fafbfb;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: .5px solid #dedddd;
+    }
+
+    .music-table{
+        padding: 2px;
+
+        .header {
+            height: 27px;
+            .cell{
+                font-weight: bold;
+                color: gray;
+                text-transform: uppercase;
+            }
+        }
+
+        .singer, .link{
+            color: rgba(68, 191, 163, 1);
+        }
+        .number, .genre{
+            color: #a1a1a1;
+        }
+        .number{
+            display: inline-block;
+            width: 33px;
+        }
+        .singer,.link,.title{
+            display: inline-block;
+            width: 160px;
+        }
+        .singer, .genre, .link{
+            text-align: center;
+        }
+        .genre{
+            display: inline-block;
+            width: 70px;
+        }
+        @media only screen and (max-width: 600px) {
+            .row{
+                margin-top: 2px;
+            }
+            .number{
+                display: inline-block;
+                width: 33px;
+            }
+            .title{
+                display: inline-block;
+                width: 200px;
+            }
+            .genre{
+                display: inline-block;
+                width: 68px;
+            }
+            .link, .singer{
+                display: none
+            }
+        }
+    }
+}
